@@ -2,7 +2,7 @@ let btn=document.querySelector('button');
 btn.addEventListener('click',function game(){
     const max=prompt("enter the max number");
     const random =Math.floor(Math.random()*max)+1;
-    let guess=prompt("guess the number");
+    let guess=prompt("Guess the number");
 
 while(true){
 
@@ -12,10 +12,11 @@ while(true){
     }
     if(guess==random){
         console.log("you are right ! congrats!! random was ",random)
+        prompt("Congrats you guess the right number!! The random no. was ",random);
         break;
 
     }else if(guess<random){
-        guess=prompt("hint: your gueess was to small,please try again");
+        guess=prompt("hint: your guess was to small,please try again");
     }else{
         guess=prompt("hint: your guess was too large. please try again");
     }
